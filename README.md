@@ -1,16 +1,19 @@
 # Heroku PHP deploy
 
-> ## The following process install has been tested on a LIVE USB UBUNTU 17.10 distribution
-
+> ## The following process install has been tested on a LIVE USB UBUNTU distribution
 
 ### Install dependencies
 
 ```sh
 sudo apt install git
-sudo apt install php7.1
+sudo apt install php7.4
 ```
 
 ### Install Composer
+
+- for windows [composer.exe](https://getcomposer.org/Composer-Setup.exe)
+
+- for unix users
 
 ```sh
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -27,7 +30,7 @@ sudo mv composer.phar /usr/local/bin/composer
 ```js
 {
   "require": {
-    "php": "~7.1.11"
+    "php": "~7.4"
   }
 }
 ```
